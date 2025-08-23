@@ -1,0 +1,86 @@
+@font-face {
+    font-family: font;
+    src: url(../font/Yekan\ Bakh\ Regular.ttf);
+}
+
+* {
+    font-family: font;
+    direction: rtr;
+}
+
+.logo {
+    width: 40%;
+}
+
+.navbar {
+    height: 100px;
+    position: fixed;
+}
+
+.nav-item{
+    margin: 0 5px;
+}
+
+body {
+    background-image: url(../images/8.jpg);
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+
+.text{
+    position: relative;
+    top: 350px;
+    margin-right: 200px;
+    color: #fff;
+    text-align: right;
+    font-weight: bold;
+}
+
+.text h1{
+    font-size: 85px;
+}
+
+.text p{
+    font-size: 20px;
+}
+
+.text a{
+    text-decoration: none;
+}
+
+.text a button{
+    background-color: #C5A47E;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius:40px ;
+    width: 7%;
+    height: 4rem;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.text a button:hover{
+    background-color: #fff;
+    color: black;
+}
+
+
+@media (min-width: 992px) {
+    .dropdown:hover .dropdown-menu {
+        display: block;
+        margin-top: 0;
+    }
+}
+
