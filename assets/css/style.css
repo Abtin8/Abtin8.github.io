@@ -5,7 +5,11 @@
 
 * {
     font-family: font;
-    direction: rtr;
+    direction: rtl;
+}
+
+:root {
+    --warning: #C5A47E !important;
 }
 
 .logo {
@@ -14,7 +18,6 @@
 
 .navbar {
     height: 100px;
-    position: fixed;
 }
 
 .nav-item{
@@ -60,22 +63,58 @@ body {
 }
 
 .text a button{
-    background-color: #C5A47E;
+    background-color: var(--warning);
     color: #fff;
     text-decoration: none;
     border: none;
     border-radius:40px ;
-    width: 7%;
+    width: 8%;
     height: 4rem;
     font-size: 20px;
     font-weight: 500;
 }
 
-.text a button:hover{
+main button{
+    background-color: var(--warning);
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius:40px ;
+    width: 30%;
+    height: 4rem;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+a button:hover{
     background-color: #fff;
     color: black;
 }
 
+main{
+    margin-top: 584px;
+}
+
+main i{
+    color: var(--warning);
+}
+
+main #about span{
+    color: var(--warning);
+}
+
+.btn-warning{
+    background-color: var(--warning);
+}
+
+.about-img{
+    height: 500px;
+}
+
+#about{
+    background-color: #101010;
+}
 
 @media (min-width: 992px) {
     .dropdown:hover .dropdown-menu {
