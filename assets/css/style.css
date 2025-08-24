@@ -20,7 +20,7 @@
     height: 100px;
 }
 
-.nav-item{
+.nav-item {
     margin: 0 5px;
 }
 
@@ -41,7 +41,7 @@ body {
 }
 
 
-.text{
+.text {
     position: relative;
     top: 350px;
     margin-right: 200px;
@@ -50,36 +50,36 @@ body {
     font-weight: bold;
 }
 
-.text h1{
+.text h1 {
     font-size: 85px;
 }
 
-.text p{
+.text p {
     font-size: 20px;
 }
 
-.text a{
+.text a {
     text-decoration: none;
 }
 
-.text a button{
+.text a button {
     background-color: var(--warning);
     color: #fff;
     text-decoration: none;
     border: none;
-    border-radius:40px ;
+    border-radius: 40px;
     width: 8%;
     height: 4rem;
     font-size: 20px;
     font-weight: 500;
 }
 
-main button{
+main button {
     background-color: var(--warning);
     color: #fff;
     text-decoration: none;
     border: none;
-    border-radius:40px ;
+    border-radius: 40px;
     width: 30%;
     height: 4rem;
     font-size: 20px;
@@ -87,34 +87,82 @@ main button{
     margin-bottom: 20px;
 }
 
-a button:hover{
+a button:hover {
     background-color: #fff;
     color: black;
 }
 
-main{
+main {
     margin-top: 584px;
     position: relative;
 }
 
-main i{
+main i {
     color: var(--warning);
 }
 
-main #about span{
+main #about span {
     color: var(--warning);
 }
 
-.btn-warning{
+.btn-warning {
     background-color: var(--warning);
 }
 
-.about-img{
+.about-img {
     height: 500px;
 }
 
-#about{
-    background-color: #101010;
+#about {
+    background-color: #101010 !important;
+}
+
+.project-card {
+    height: 250px;
+}
+
+.project-img img {
+    transition: transform 0.4s ease;
+}
+
+.project-card:hover .project-img img {
+    transform: scale(1.1);
+}
+
+.project-btn {
+    width: 48px;
+    height: 48px;
+    z-index: 2;
+}
+
+.project-btn i {
+    font-size: 20px;
+}
+
+.project-info {
+    z-index: 3;
+}
+
+.project-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+    z-index: 1;
+}
+
+#projects{
+    background-color: #101010 !important;
+}
+
+#projects button{
+    background-color: var(--warning);
+    margin-top: 95px;
+    margin-right: 360px;
+}
+
+#projects .bi-arrow-left{
+    color: #ffffff;
 }
 
 @media (min-width: 992px) {
@@ -123,4 +171,3 @@ main #about span{
         margin-top: 0;
     }
 }
-
