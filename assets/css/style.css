@@ -94,6 +94,7 @@ a button:hover{
 
 main{
     margin-top: 584px;
+    position: relative;
 }
 
 main i{
