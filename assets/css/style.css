@@ -204,6 +204,28 @@ main h2{
     font-size: 45px;
 }
 
+#ad-video{
+    width: 100%;
+    height: 400px;
+    padding: 150px 0;
+    background-image: url(../images/1\ \(1\).jpg);
+    position: relative;
+}
+
+.text-ad{
+    text-align: center;
+}
+
+#ad-video i{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 70px;
+}
+
+#ad-video i:hover{
+    cursor: pointer;
+    color: rgba(255, 255, 255);
+}
+
 @media (min-width: 992px) {
     .dropdown:hover .dropdown-menu {
         display: block;
