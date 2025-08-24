@@ -8,6 +8,10 @@
     direction: rtl;
 }
 
+body{
+    background-color: #101010;
+}
+
 :root {
     --warning: #C5A47E !important;
 }
@@ -24,7 +28,7 @@
     margin: 0 5px;
 }
 
-body {
+header {
     background-image: url(../images/8.jpg);
     width: 100%;
     height: 100vh;
@@ -87,14 +91,13 @@ main button {
     margin-bottom: 20px;
 }
 
+main{
+    margin-top: 100px;
+}
+
 a button:hover {
     background-color: #fff;
     color: black;
-}
-
-main {
-    margin-top: 584px;
-    position: relative;
 }
 
 main i {
@@ -143,6 +146,10 @@ main #about span {
     z-index: 3;
 }
 
+#projects{
+    margin-top: 100px;
+}
+
 .project-card::before {
     content: "";
     position: absolute;
@@ -163,6 +170,38 @@ main #about span {
 
 #projects .bi-arrow-left{
     color: #ffffff;
+}
+
+#text-cards button{
+    background-color: var(--warning);
+    margin-top: 95px;
+    margin-right: 360px;
+}
+
+#text-cards i{
+    position: relative;
+    top: 3px;
+}
+
+#projects i{
+    position: relative;
+    top: 3px;
+}
+
+#text-cards .bi-arrow-left{
+    color: #ffffff;
+}
+
+#text-cards{
+    margin-top: 100px;
+}
+
+#text-cards h3{
+    color: var(--warning);
+}
+
+main h2{
+    font-size: 45px;
 }
 
 @media (min-width: 992px) {
