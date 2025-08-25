@@ -307,13 +307,6 @@ main #about span {
     color: var(--warning);
 }
 
-@media (min-width: 992px) {
-    .dropdown:hover .dropdown-menu {
-        display: block;
-        margin-top: 0;
-    }
-}
-
 #our-team img {
     cursor: pointer;
     object-fit: cover;
@@ -321,10 +314,30 @@ main #about span {
     max-width: 280px;
 }
 
+@media (min-width: 992px) {
+    .dropdown:hover .dropdown-menu {
+        display: block;
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 476px) {
+    .navbar-toggler{
+        position: relative;
+        bottom: 25px;
+        margin-right: 350px;
+    } 
+
+    .logo{
+        position: relative;
+        top: 20px;
+    }
+}
+
 @media (max-width: 768px) {
 
     .text a button{
-        width: 12%;
+        width: 15%;
     }
 
     .text{
