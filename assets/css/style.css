@@ -322,6 +322,14 @@ main #about span {
 }
 
 @media (max-width: 768px) {
+    .text a button{
+        width: 12%;
+    }
+
+    .text{
+        margin-right: 50px;
+    }
+
     #projects .btn{
         position: relative;
         right: 100px !important;
