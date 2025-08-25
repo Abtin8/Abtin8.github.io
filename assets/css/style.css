@@ -130,10 +130,10 @@ main #about span {
 
 /* project */
 .project-card {
-    height: 250px ; 
+    height: 250px;
 }
 
-.porject2-card{
+.porject2-card {
     height: 450px !important;
 }
 
@@ -190,9 +190,10 @@ main #about span {
     top: 3px;
 }
 
-.project-card{
+.project-card {
     background-color: #1B1B1B !important;
 }
+
 /* text cards */
 
 #text-cards button {
@@ -232,6 +233,7 @@ main #about span {
 }
 
 .text-ad {
+    margin-top: 150px;
     text-align: center;
 }
 
@@ -261,8 +263,8 @@ main #about span {
     background-color: var(--warning);
 }
 
-#our-team .text-start button:hover{
-    color: #000 !important; 
+#our-team .text-start button:hover {
+    color: #000 !important;
     background-color: white;
 }
 
@@ -272,22 +274,22 @@ main #about span {
     color: #000;
 }
 
-#our-team{
+#our-team {
     margin-top: 100px;
 }
 
-#our-team .team-btn{
+#our-team .team-btn {
     margin-top: 255px;
     margin-right: 270px;
 }
 
-#our-team img{
+#our-team img {
     cursor: pointer;
     object-fit: cover;
     height: 300px;
 }
 
-#our-team p{
+#our-team p {
     color: rgba(255, 255, 255, 0.5);
     font-size: 20px;
 }
@@ -324,11 +326,11 @@ main #about span {
 
 /* comments */
 
-.comments-title{
+.comments-title {
     font-size: 60px;
 }
 
-.comments-h5{
+.comments-h5 {
     position: relative;
     z-index: 999;
     left: 70px;
@@ -337,7 +339,7 @@ main #about span {
     font-weight: 700;
 }
 
-.comments-h3{
+.comments-h3 {
     z-index: 999;
     position: relative;
     top: 50px;
@@ -346,7 +348,7 @@ main #about span {
     color: #999999 !important;
 }
 
-.comments img{
+.comments img {
     position: absolute;
     z-index: 9999;
     width: 13%;
@@ -357,9 +359,52 @@ main #about span {
 
 /* weblog */
 
-.weblog{
+.weblog {
     background: #1f1f1f;
     background: linear-gradient(180deg, rgba(31, 31, 31, 1) 50%, rgba(16, 16, 16, 1) 50%);
+}
+
+/* footer */
+/* conectus */
+
+#conectus {
+    margin-top: 100px;
+    width: 100%;
+    height: 400px;
+    padding: 150px 0;
+    background-image: url(../images/1\ \(1\).jpg);
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.text-conect {
+    margin-top: 100px;
+    margin-right: 200px;
+}
+
+.text-conect h2 {
+    font-size: 40px;
+}
+
+.contact-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.contact-link:hover {
+    color: var(--warning);
+}
+
+.contact-link i {
+    font-size: 1.2rem;
+}
+
+.icons{
+    margin-right: 200px;
 }
 
 @media (min-width: 992px) {
@@ -370,38 +415,46 @@ main #about span {
 }
 
 @media (max-width: 476px) {
-    .navbar-toggler{
+    .navbar-toggler {
         position: relative;
         bottom: 25px;
         margin-right: 320px;
-    } 
+    }
 
-    .logo{
+    .logo {
         position: relative;
         top: 20px;
     }
 }
 
 @media (max-width: 768px) {
-    .comments img{
-    width: 10% ;
-    margin-left: 400px;
-    }
-
-    .text a button{
-        width: 15%;
-    }
-
-    .text{
+    .text-conect{
         margin-right: 50px;
     }
 
-    #projects .btn{
+    .icons{
+        margin-right: 50px;
+    }
+
+    .comments img {
+        width: 10%;
+        margin-left: 400px;
+    }
+
+    .text a button {
+        width: 15%;
+    }
+
+    .text {
+        margin-right: 50px;
+    }
+
+    #projects .btn {
         position: relative;
         right: 100px !important;
     }
 
-    #text-cards .btn{
+    #text-cards .btn {
         position: relative;
         right: 100px !important;
     }
@@ -411,12 +464,12 @@ main #about span {
         align-items: center;
     }
 
-    #our-team .col-md-7 > div {
+    #our-team .col-md-7>div {
         margin-bottom: 20px;
     }
 
     #our-team img {
-        max-width: 90%; 
+        max-width: 90%;
         height: auto;
     }
 
@@ -432,22 +485,22 @@ main #about span {
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-    .porject2-card{
+    .porject2-card {
         height: 250px !important;
     }
 
-    .comments-h3{
+    .comments-h3 {
         left: 30px;
     }
 
-    .comments-h5{
+    .comments-h5 {
         left: 10px;
     }
 
-    .comments img{
-    width: 20%;
-    margin-left: 160px;
-    margin-top: 180px;
+    .comments img {
+        width: 20%;
+        margin-left: 160px;
+        margin-top: 180px;
     }
 
     #our-team .col-md-7 {
@@ -456,7 +509,7 @@ main #about span {
         gap: 20px;
     }
 
-    #our-team .col-md-7 > div {
+    #our-team .col-md-7>div {
         flex: 0 0 calc(50% - 20px);
         display: flex;
         justify-content: center;
@@ -479,23 +532,23 @@ main #about span {
         -moz-transform: none;
         -ms-transform: none;
         -o-transform: none;
-}
+    }
 }
 
 @media (min-width: 1024px) and (max-width: 1366px) {
-    .porject2-card{
-    height: 350px !important;
+    .porject2-card {
+        height: 350px !important;
     }
 
-    .comments-h3{
+    .comments-h3 {
         left: 50px;
     }
 
-    .comments-h5{
+    .comments-h5 {
         left: 30px;
     }
 
-    .comments img{
+    .comments img {
         margin-left: 250px;
     }
 
