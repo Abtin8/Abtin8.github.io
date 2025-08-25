@@ -130,7 +130,11 @@ main #about span {
 
 /* project */
 .project-card {
-    height: 250px;
+    height: 250px ; 
+}
+
+.porject2-card{
+    height: 450px !important;
 }
 
 .project-img img {
@@ -173,7 +177,7 @@ main #about span {
 
 #projects button {
     background-color: var(--warning);
-    margin-top: 95px;
+    margin-top: 190px;
     margin-right: 360px;
 }
 
@@ -186,7 +190,11 @@ main #about span {
     top: 3px;
 }
 
+.project-card{
+    background-color: #1B1B1B !important;
+}
 /* text cards */
+
 #text-cards button {
     background-color: var(--warning);
     margin-top: 95px;
@@ -314,6 +322,46 @@ main #about span {
     max-width: 280px;
 }
 
+/* comments */
+
+.comments-title{
+    font-size: 60px;
+}
+
+.comments-h5{
+    position: relative;
+    z-index: 999;
+    left: 70px;
+    top: 50px;
+    color: #fff;
+    font-weight: 700;
+}
+
+.comments-h3{
+    z-index: 999;
+    position: relative;
+    top: 50px;
+    left: 90px;
+    font-size: 17px;
+    color: #999999 !important;
+}
+
+.comments img{
+    position: absolute;
+    z-index: 9999;
+    width: 13%;
+    margin-top: 170px;
+    margin-left: 330px;
+    border-radius: 100px;
+}
+
+/* weblog */
+
+.weblog{
+    background: #1f1f1f;
+    background: linear-gradient(180deg, rgba(31, 31, 31, 1) 50%, rgba(16, 16, 16, 1) 50%);
+}
+
 @media (min-width: 992px) {
     .dropdown:hover .dropdown-menu {
         display: block;
@@ -335,6 +383,10 @@ main #about span {
 }
 
 @media (max-width: 768px) {
+    .comments img{
+    width: 10% ;
+    margin-left: 400px;
+    }
 
     .text a button{
         width: 15%;
@@ -380,6 +432,24 @@ main #about span {
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
+    .porject2-card{
+        height: 250px !important;
+    }
+
+    .comments-h3{
+        left: 30px;
+    }
+
+    .comments-h5{
+        left: 10px;
+    }
+
+    .comments img{
+    width: 20%;
+    margin-left: 160px;
+    margin-top: 180px;
+    }
+
     #our-team .col-md-7 {
         flex-wrap: wrap;
         justify-content: center;
@@ -405,10 +475,30 @@ main #about span {
         writing-mode: horizontal-tb;
         transform: none;
         margin-top: 10px;
-    }
+        -webkit-transform: none;
+        -moz-transform: none;
+        -ms-transform: none;
+        -o-transform: none;
+}
 }
 
 @media (min-width: 1024px) and (max-width: 1366px) {
+    .porject2-card{
+    height: 350px !important;
+    }
+
+    .comments-h3{
+        left: 50px;
+    }
+
+    .comments-h5{
+        left: 30px;
+    }
+
+    .comments img{
+        margin-left: 250px;
+    }
+
     #our-team .col-md-7 {
         flex-wrap: wrap;
         justify-content: space-around;
