@@ -403,8 +403,35 @@ main #about span {
     font-size: 1.2rem;
 }
 
-.icons{
+.icons {
     margin-right: 200px;
+}
+
+/* main footer */
+
+.footer-link {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-link:hover {
+    color: var(--warning);
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--warning);
+    color: #fff;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.social-icon:hover {
+    background: #fff;
+    color: var(--warning);
 }
 
 @media (min-width: 992px) {
@@ -428,11 +455,11 @@ main #about span {
 }
 
 @media (max-width: 768px) {
-    .text-conect{
+    .text-conect {
         margin-right: 50px;
     }
 
-    .icons{
+    .icons {
         margin-right: 50px;
     }
 
