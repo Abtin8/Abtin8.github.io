@@ -322,6 +322,7 @@ main #about span {
 }
 
 @media (max-width: 768px) {
+
     .text a button{
         width: 12%;
     }
@@ -367,7 +368,7 @@ main #about span {
 
 @media (min-width: 768px) and (max-width: 1024px) {
     #our-team .col-md-7 {
-        flex-wrap: wrap;/
+        flex-wrap: wrap;
         justify-content: center;
         gap: 20px;
     }
