@@ -8,7 +8,7 @@
     direction: rtl;
 }
 
-body{
+body {
     background-color: #101010;
 }
 
@@ -16,6 +16,7 @@ body{
     --warning: #C5A47E !important;
 }
 
+/* navbar */
 .logo {
     width: 40%;
 }
@@ -78,6 +79,7 @@ header {
     font-weight: 500;
 }
 
+/* main */
 main button {
     background-color: var(--warning);
     color: #fff;
@@ -91,7 +93,11 @@ main button {
     margin-bottom: 20px;
 }
 
-main{
+main h2 {
+    font-size: 45px;
+}
+
+main {
     margin-top: 100px;
 }
 
@@ -112,6 +118,7 @@ main #about span {
     background-color: var(--warning);
 }
 
+/* about */
 .about-img {
     height: 500px;
 }
@@ -120,6 +127,7 @@ main #about span {
     background-color: #101010 !important;
 }
 
+/* project */
 .project-card {
     height: 250px;
 }
@@ -146,7 +154,7 @@ main #about span {
     z-index: 3;
 }
 
-#projects{
+#projects {
     margin-top: 100px;
 }
 
@@ -158,53 +166,51 @@ main #about span {
     z-index: 1;
 }
 
-#projects{
+#projects {
     background-color: #101010 !important;
 }
 
-#projects button{
+#projects button {
     background-color: var(--warning);
     margin-top: 95px;
     margin-right: 360px;
 }
 
-#projects .bi-arrow-left{
+#projects .bi-arrow-left {
     color: #ffffff;
 }
 
-#text-cards button{
+#projects i {
+    position: relative;
+    top: 3px;
+}
+
+/* text cards */
+#text-cards button {
     background-color: var(--warning);
     margin-top: 95px;
     margin-right: 360px;
 }
 
-#text-cards i{
+#text-cards i {
     position: relative;
     top: 3px;
 }
 
-#projects i{
-    position: relative;
-    top: 3px;
-}
-
-#text-cards .bi-arrow-left{
+#text-cards .bi-arrow-left {
     color: #ffffff;
 }
 
-#text-cards{
+#text-cards {
     margin-top: 100px;
 }
 
-#text-cards h3{
+#text-cards h3 {
     color: var(--warning);
 }
 
-main h2{
-    font-size: 45px;
-}
-
-#ad-video{
+/* ad video */
+#ad-video {
     margin-top: 100px;
     width: 100%;
     height: 400px;
@@ -213,18 +219,88 @@ main h2{
     position: relative;
 }
 
-.text-ad{
+.text-ad {
     text-align: center;
 }
 
-#ad-video i{
+#ad-video i {
     color: rgba(255, 255, 255, 0.5);
     font-size: 70px;
 }
 
-#ad-video i:hover{
+#ad-video i:hover {
     cursor: pointer;
     color: rgba(255, 255, 255);
+}
+
+/* our team */
+.team-btn {
+    background-color: var(--warning);
+    color: #fff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+#our-team .text-start button {
+    color: white !important;
+    background-color: var(--warning);
+}
+
+#our-team .text-start button:hover{
+    color: #000 !important; 
+    background-color: white;
+}
+
+.team-btn:hover {
+    transform: scale(1.2);
+    background-color: #fff;
+    color: #000;
+}
+
+#our-team{
+    margin-top: 100px;
+}
+
+#our-team .team-btn{
+    margin-top: 255px;
+    margin-right: 270px;
+}
+
+#our-team img{
+    cursor: pointer;
+    object-fit: cover;
+    height: 300px;
+}
+
+#our-team p{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 20px;
+}
+
+.vertical-text {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    font-size: 14px;
+    color: #fff;
+}
+
+.vertical-text {
+    font-weight: bold;
+    margin-right: 10px;
+    margin-left: 5px;
+    writing-mode: vertical-rl;
+    transform: rotate(0deg);
+    font-size: 14px;
+    color: #fff;
+    position: relative;
+}
+
+.vertical-text::before {
+    content: attr(data-name);
+    color: var(--warning);
 }
 
 @media (min-width: 992px) {
