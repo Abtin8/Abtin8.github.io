@@ -416,7 +416,11 @@ main #about span {
 }
 
 .footer-link:hover {
-    color: var(--warning);
+    color: var(--warning) !important;
+}
+
+.fast h5 , li{
+    padding-bottom: 10px !important;
 }
 
 .social-icon {
@@ -424,14 +428,67 @@ main #about span {
     height: 40px;
     border-radius: 50%;
     background: var(--warning);
-    color: #fff;
+    color: #000000;
     font-size: 18px;
     transition: 0.3s;
+}
+
+.social-icon i{
+    margin-top: 8px;
 }
 
 .social-icon:hover {
     background: #fff;
     color: var(--warning);
+}
+
+.email-box {
+    position: relative;
+    width: 350px;
+}
+
+.email-input {
+    width: 100%;
+    padding: 15px 15px 15px 60px;
+    border: 2px solid var(--warning);
+    border-radius: 50px;
+    background: transparent;
+    color: #fff;
+    font-size: 16px;
+    outline: none;
+    text-align: right;
+}
+
+.email-input::placeholder {
+    color: #ccc;
+}
+
+.send-btn {
+    position: absolute;
+    bottom: 6px;
+    left: 7px;
+    transform: translateY(-50%);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: none;
+    background: var(--warning);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.4s ease;
+    transform: rotate(-120deg);
+}
+
+.send-btn i {
+    color: #fff;
+    font-size: 22px;
+    transition: transform 0.4s ease;
+}
+
+.send-btn:hover i {
+    transform: rotate(-45deg);
 }
 
 @media (min-width: 992px) {
@@ -512,6 +569,11 @@ main #about span {
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
+    .email-box{
+        position: relative;
+        left: 100px;
+    }
+
     .porject2-card {
         height: 250px !important;
     }
