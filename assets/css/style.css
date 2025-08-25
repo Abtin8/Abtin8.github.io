@@ -505,6 +505,14 @@ main #about span {
         margin-right: 320px;
     }
 
+    .icons{
+        margin-right: 5px !important;
+    }
+
+    .text-conect{
+        margin-right: 5px !important;
+    }
+
     .logo {
         position: relative;
         top: 20px;
