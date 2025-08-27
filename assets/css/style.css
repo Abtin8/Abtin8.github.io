@@ -17,6 +17,12 @@ body {
     --warning: #C5A47E !important;
 }
 
+.bi-play-fill {
+    position: relative;
+    left: 1px;
+    top: 8px;
+}
+
 /* navbar */
 .logo {
     width: 40%;
@@ -510,7 +516,7 @@ main #about span {
     }
 
     .text-conect{
-        margin-right: 5px !important;
+        margin-right: 56px !important;
     }
 
     .logo {
