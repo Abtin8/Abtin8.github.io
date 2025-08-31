@@ -24,6 +24,7 @@ body {
 }
 
 /* navbar */
+
 .logo {
     width: 40%;
 }
@@ -51,7 +52,6 @@ header {
     left: 0;
     background-color: rgba(0, 0, 0, 0.6);
 }
-
 
 .text {
     position: relative;
@@ -286,7 +286,7 @@ main #about span {
 
 #our-team .team-btn {
     margin-top: 255px;
-    margin-right: 270px;
+    margin-right: 260px;
 }
 
 #our-team img {
@@ -302,20 +302,30 @@ main #about span {
 
 .vertical-text {
     writing-mode: vertical-rl;
+    opacity: 0;
     transform: rotate(180deg);
     font-size: 14px;
     color: #fff;
+    position: relative !important;
+    right: 35px;
+}
+
+#our-team img{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#our-team .card-u:hover .vertical-text{
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
 }
 
 .vertical-text {
     font-weight: bold;
-    margin-right: 10px;
-    margin-left: 5px;
     writing-mode: vertical-rl;
     transform: rotate(0deg);
     font-size: 14px;
     color: #fff;
-    position: relative;
 }
 
 .vertical-text::before {
@@ -526,6 +536,22 @@ main #about span {
 }
 
 @media (max-width: 768px) {
+    .navbar-collapse.collapse {
+    background-color: #101010;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    opacity: 0;
+}
+
+.navbar-collapse.collapse.show {
+    opacity: 1;
+}
+
     .text-conect {
         margin-right: 50px;
     }
@@ -583,6 +609,22 @@ main #about span {
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
+    .navbar-collapse.collapse {
+    background-color: #101010;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    opacity: 0;
+}
+
+.navbar-collapse.collapse.show {
+    opacity: 1;
+}
+
     .email-box{
         position: relative;
         left: 100px;
