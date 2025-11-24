@@ -74,6 +74,11 @@ header {
     text-decoration: none;
 }
 
+.registerbtn{
+    border-radius: 5px;
+    background-color: #999999;
+}
+
 .text a button {
     background-color: var(--warning);
     color: #fff;

@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&family=Vazirmatn:wght@100..900&display=swap');
+
+* {
+    font-family: Vazirmatn;
+    direction: rtl;
+}
+
+input{
+    direction: ltr;
+}
+
+.redirect{
+    text-align: center;
+    justify-content: center;
+}
+
+a{
+    color: #007bff;
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 430px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h3 {
+    margin:10px 0;
+    font-size: medium;
+    display: block;
+}
+
+input {
+    width: 95%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.password-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.password-wrapper button {
+    margin-left: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+label {
+    display: block;
+    margin-top: 5px;
+    font-size: 0.8em;
+}
+
+label.error {
+    color: red;
+}
+
+label.success {
+    color: green;
+}
+
+#submit {
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.1s ease;
+}
+
+#submit.clicked {
+    transform: scale(0.98);
+}
+
+#successMsg {
+    margin-top: 15px;
+    text-align: center;
+    color: green;
+    font-weight: bold;
+}
+
+
+.success-page {
+    display: none;
+    position: relative;
+    padding: 20px;
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    border-radius: 5px;
+    width: 90%;
+    margin: 0 auto;
+}

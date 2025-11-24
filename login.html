@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fa">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>فرم ثبت‌نام</title>
+        <link rel="stylesheet" href="./assets/css/style2.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    </head>
+    <body>
+        <div class="container">
+            <form id="signupForm">
+                <h2>فرم ورود</h2>
+                <h3>نام کاربری:</h3>
+                <input type="text" id="username">
+                <label id="usernameMsg"></label>
+                <h3>رمز عبور:</h3>
+                <div class="password-wrapper">
+                    <input type="password" id="password">
+                    <button type="button" onclick="togglePassword('password')"><i class="fas fa-eye"></i></button>
+                </div>
+                <label id="passwordMsg"></label>
+            <button id="submit">ورود</button>
+            <div class="redirect">
+                <a href="./register.html">
+                    <h3>حساب ندارید؟ ساخت حساب کاربری</h3>
+                </a>
+            </div>
+            </form>
+            <div id="success" class="success-page">
+                ورود با موفقیت انجام شد ✅
+            </div>
+        </div>
+        <script src="./assets/js/script.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/js/all.min.js"></script>
+    </body>
+</html>
