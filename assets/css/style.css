@@ -512,6 +512,13 @@ main #about span {
     transform: rotate(-45deg);
 }
 
+@media (max-width: 389px) {
+    .navbar-toggler{
+        position: relative;
+        left: 30px;
+    }
+}
+
 @media (min-width: 992px) {
     .dropdown:hover .dropdown-menu {
         display: block;
