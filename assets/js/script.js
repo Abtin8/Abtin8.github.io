@@ -34,7 +34,7 @@ document.getElementById("submit").addEventListener("click", function (e) {
         emailMsg.textContent = "ایمیل نمی‌تواند خالی باشد.";
         emailMsg.className = "error";
         isValid = false;
-    } else if (!email.includes("@") || !email.includes(".")) {
+    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
         emailMsg.textContent = "ایمیل وارد شده معتبر نیست.";
         emailMsg.className = "error";
         isValid = false;
